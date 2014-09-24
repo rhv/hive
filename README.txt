@@ -43,6 +43,17 @@ dynamically to the Hadoop cluster), extensibility (with MapReduce
 framework and UDF/UDAF/UDTF), fault-tolerance, and loose-coupling with
 its input formats.
 
+Building
+========
+
+To build the Apache Hive (TM) package, make sure you have maven installed.
+Then enter the following commands (these can take a while to complete):
+
+ mvn clean install -DskipTests -Phadoop-2
+ mvn package -DskipTests -Phadoop-2 -Pdist
+
+After these, the distribution can be found in the directory
+ packaging/target/apache-hive-0.13.0-bin.tar.gz
 
 General Info
 ============
